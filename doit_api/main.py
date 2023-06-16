@@ -386,7 +386,7 @@ class task(taskbase):
                  # -- advanced
                  setup=None,                  # type: List[DoitTask]
                  teardown=None,               # type: List[DoitAction]
-                 getargs=None,                # type: Dict[str, Tuple[str, str]]
+                 getargs=None,                # type: Dict[str, Tuple[str, str | None]]
                  calc_dep=None,               # type: List[DoitTask]
                  # -- misc
                  verbosity=None,              # type: int
@@ -654,7 +654,7 @@ def cmdtask(
            # -- advanced
            setup=None,                  # type: List[DoitTask]
            teardown=None,               # type: List[DoitAction]
-           getargs=None,                # type: Dict[str, Tuple[str, str]]
+           getargs=None,                # type: Dict[str, Tuple[str, str | None]]
            calc_dep=None,               # type: List[DoitTask]
            # -- misc
            verbosity=None               # type: int
@@ -847,7 +847,7 @@ def pytask(
            # -- advanced
            setup=None,                  # type: List[DoitTask]
            teardown=None,               # type: List[DoitAction]
-           getargs=None,                # type: Dict[str, Tuple[str, str]]
+           getargs=None,                # type: Dict[str, Tuple[str, str | None]]
            calc_dep=None,               # type: List[DoitTask]
            # -- misc
            verbosity=None               # type: int
